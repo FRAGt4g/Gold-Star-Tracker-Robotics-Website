@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<title>Python Flask ReplAuth</title>
+  <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="header">
+    <span>
+      THE OFFICIAL LASA ROBOTICS GOLD STAR TRACKER
+    </span>
+  </div>
+  <br>
+  <div class="container">
+    {% for item in scores %}
+      <div class="scorecard {% if item.score < 0 %} negative {% endif %}">
+        <div class="title">
+          {{item.name}}
+        </div>
+        <div class="score">
+          {{item.score}}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

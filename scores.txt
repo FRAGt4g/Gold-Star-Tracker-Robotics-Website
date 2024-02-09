@@ -1,0 +1,8 @@
+//Rachit = 52.7
+David = 1
+Miles = 6
+Soumik = 4
+Arun = 2
+Wiliam = 1
+Yang-Fan=2
+Jack = -3
